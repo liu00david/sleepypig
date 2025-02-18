@@ -4,6 +4,7 @@ Set up new site for https://sleepypigco.notion.site/Welcome-to-The-Sleepy-Pig-16
 ## Components
 * Astro (web framework): Best for fast web development using dynamic components
 * Netlify (web hosting platform): Best for free scalable hosting
+* Tailwind CSS (fast styling)
 
 ## To do
 * Domain name?
@@ -42,4 +43,5 @@ src/pages/ → Page-specific content
 ├── package.json
 ├── tsconfig.json
 ├── README.md
+
 
