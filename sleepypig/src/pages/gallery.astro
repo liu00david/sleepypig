@@ -1,14 +1,13 @@
 ---
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import Layout from "../layouts/Layout.astro";
 ---
-<Header />
-<h1>Gallery</h1>
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px;">
-  <img src="/images/cake1.png" alt="Baking Image 1" />
-  <img src="/images/cookies1.png" alt="Baking Image 2" />
-  <img src="/images/varietygoods1.png" alt="Baking Image 3" />
-</div>
-
-<Footer />
+<Layout>
+  <h1>Photo Gallery</h1>
+  <div class="gallery">
+    <img src="/images/cake1.png" alt="Baking 1">
+    <img src="/images/cookies1.png" alt="Baking 2">
+    <img src="/images/varietygoods1.png" alt="Baking 3">
+    <!-- <img src="/images/gallery4.jpg" alt="Baking 4"> -->
+  </div>
+</Layout>

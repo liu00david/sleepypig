@@ -1,5 +1,7 @@
 ---
-import "../styles/styles.css"; // Import global CSS
+import "../styles/styles.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <!DOCTYPE html>
@@ -7,35 +9,19 @@ import "../styles/styles.css"; // Import global CSS
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><slot name="title">My Baking Shop</slot></title>
+  <title>The Sleepy Pig</title>
   <meta name="description" content="Delicious homemade cakes, cookies, and more!">
-  <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <nav>
-      <ul>
-		<a href="/">Home</a>
-		<a href="/products">Products</a>
-		<a href="/gallery">Gallery</a>
-		<a href="/aboutme">About Me</a>
-		<a href="/contact">Contact</a>
-      </ul>
-    </nav>
-  </header>
+  <Header /> <!-- Reusable Header -->
 
-  <!-- Main Content -->
   <main class="container">
-    <slot /> <!-- Page content will be inserted here -->
+    <slot /> <!-- Page content -->
   </main>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 My Baking Shop. All rights reserved.</p>
-  </footer>
+  <Footer /> <!-- Reusable Footer -->
 
 </body>
 </html>

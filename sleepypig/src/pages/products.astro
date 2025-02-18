@@ -1,12 +1,12 @@
 ---
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import Layout from "../layouts/Layout.astro";
 ---
-<Header />
-<h1>Our Products</h1>
-<ul>
-  <li><a href="/products/cakes">Cakes</a></li>
-  <li><a href="/products/cookies">Cookies</a></li>
-  <li><a href="/products/varietygoods">Variety Goods</a></li>
-</ul>
-<Footer />
+
+<Layout>
+  <h1>Our Baked Goods</h1>
+  <div class="gallery">
+    <a href="/products/cakes"><img src="/images/cake1.png" alt="Cakes"><p>Cakes</p></a>
+    <a href="/products/cookies"><img src="/images/cookies1.png" alt="Cookies"><p>Cookies</p></a>
+    <a href="/products/varietygoods"><img src="/images/varietygoods1.png" alt="Variety Goods"><p>Variety Goods</p></a>
+  </div>
+</Layout>
