@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+body {
+  font-family: 'Lora', serif;
+  background-color: #DDBEA9; /* Sand */
+  color: #7F5539; /* Earth Brown */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #B08968; /* Clay */
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+img {
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}

@@ -1,15 +1,17 @@
 ---
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import Layout from "../layouts/Layout.astro";
 ---
-<Header />
-<h1>Welcome to sleepy pig</h1>
-<p>Delicious homemade treats made with love.</p>
-<p>
-<a href="/products">View my goods</a>
-</p>
-<p>
-<a href="/gallery">View things ive made</a>
-</p>
-<a href="https://www.instagram.com/sleepypigco">my insta</a>
-<Footer />
+
+<Layout>
+  <h1>Welcome to My Baking Shop! 🍰</h1>
+  <p>Delicious cakes, cookies, and more!</p>
+
+  <section>
+    <h2>Our Bestsellers</h2>
+    <ul>
+      <li><a href="/products/">Products 🎂</a></li>
+      <li><a href="/gallery">Gallery 🍪</a></li>
+      <li><a href="/aboutme">About me 🍩</a></li>
+    </ul>
+  </section>
+</Layout>
